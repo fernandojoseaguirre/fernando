@@ -1,0 +1,17 @@
+#include "stdafx.h"
+#include<iostream>
+#include"conio.h"
+
+using namespace std;
+void main() {
+	float salario,iva,sn,afp;
+	cout<<"ingrese el salario";
+	cin>> salario;
+	iva=salario*0.13;
+	afp=salario*0.121;
+	sn=salario-(iva+afp);
+	cout<<"el salario neto es :"<<sn;
+	cout<<endl;
+
+	getch();
+}
