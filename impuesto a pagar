@@ -1,0 +1,15 @@
+#include "stdafx.h"
+#include<iostream>
+#include"conio.h"
+
+using namespace std;
+void main() {
+	float m,impuesto;
+	cout<<"ingrese monto";
+	cin>> m;
+	impuesto=m*0.13;
+	cout<<"el impuesto es :"<<impuesto;
+	cout<<endl;
+
+	getch();
+}
