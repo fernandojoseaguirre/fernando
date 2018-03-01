@@ -1,0 +1,14 @@
+#include "stdafx.h"
+#include<iostream>
+#include"conio.h"
+
+using namespace std;
+void main() {
+	float area,d;
+	cout<<"ingrese el diametro";
+	cin >> d
+	area = (3.1415*d*d)/4;
+	cout << area << endl;
+	getch();
+
+	}
