@@ -1,0 +1,19 @@
+#include "stdafx.h"
+#include<iostream>
+#include"conio.h"
+
+using namespace std;
+void main() {
+	float a,c,v,diametro;
+	cout<<"ingrese el diametro";
+	cin>> diametro;
+	a=(3.1415*diametro*diametro)/4;
+	v=(3.1415*diametro*diametro*diametro)/6;
+	c=3.1415*diametro;
+	cout<<"el area es :"<<a;
+	cout<<"la circunferencia es :"<<c;
+	cout<<"el volumen es:"<<v;
+	cout<<endl;
+
+	getch();
+}
