@@ -1,0 +1,19 @@
+#include "stdafx.h"
+#include<iostream>
+#include"conio.h"
+
+using namespace std;
+void main() {
+	float x,b,a,c;
+	cout<<"ingrese b";
+	cin>> b;
+	cout<<"ingese a";
+	cin>> a;
+	cout<<"ingese c";
+	cin>> c;
+	x=(b*b-4*a*c);
+	cout<<"x es :"<<x;
+	cout<<endl;
+
+	getch();
+}
