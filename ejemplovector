@@ -1,0 +1,62 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#define MAX 100
+
+using namespace std;
+
+void cargar(int vec[],int tam);
+void ordenar(int vec[],int tam);
+void mostrar(int vec[],int tam);
+
+
+void main()
+{
+    int n, v[MAX];
+    do{
+        cout<< "Ingrese el numero de elementos del vector: ";
+        cin>> n;
+    } while ((n>MAX) || (n<=0));
+    cargar(v,n);
+    ordenar(v,n);
+    cout <<"Mostrar datos clasificados"<<endl;
+    mostrar(v,n);
+    getch();
+}
+
+
+void cargar(int v[],int tam)
+{
+    for(int i=0;i<tam;i++)
+    {
+       
+        cout<< "Ingrese el valor para vec["<< i << "]=";
+        cin>> v[i];
+    }
+}
+
+void mostrar(int a[],int tam)
+{  
+    for(int i=0;i<tam;i++)
+    {
+        cout<< "vec["<< i << "]=";
+        cout<< a[i]<<endl;
+    }
+}
+void ordenar(int vec[],int tam)
+{
+    int aux;
+    for (int i=0;i<tam-1;i++)
+    {
+        for(int j=i+1;j<tam;j++)
+        {
+            if(vec[i]>vec[j])
+            {
+                aux=vec[j];
+                vec[j]=vec[i];
+                vec[i]=aux;
+            }
+        }
+    }
+}
+
